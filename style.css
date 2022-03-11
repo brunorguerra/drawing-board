@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.clear,
+h1,
+footer {
+  margin-left: 100px;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.box-painting {
+  margin: 0 auto;
+
+  display: flex;
+  flex-flow: row-reverse wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.box-painting #tela {
+  border: 2px solid #000;
+  background-color: #fff;
+  cursor: crosshair;
+}
+.box-painting .colorArea {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 13px;
+}
+
+.option-one {
+  margin-top: 20px;
+}
+.option-two {
+  width: calc(100% - 10px);
+  margin-top: 30px;
+}
+.option-one label,
+.option-two label {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.option-two input {
+  height: 30px;
+
+  cursor: pointer;
+  width: 100%;
+}
+
+.box-painting .colorArea #widthPincel {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 10px);
+  height: 40px;
+  background: #f00;
+}
+.box-painting .colorArea #widthPincel .width-line {
+  flex: 1;
+  height: inherit;
+  background: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-painting .colorArea #widthPincel button {
+  width: 20px;
+  height: inherit;
+  background: #eee;
+  font-size: 20px;
+  cursor: pointer;
+}
+.box-painting .colorArea .colors {
+  padding-top: 10px;
+  width: 100px;
+  flex-flow: row wrap;
+  display: flex;
+  gap: 10px;
+}
+.box-painting .colorArea .colors .color {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 4px solid transparent;
+}
+.box-painting .colorArea .color.active {
+  border-color: #a9a9a9;
+}
+
+.clear {
+  border: 1px solid #000;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 13px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desenhando</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Faça seu Desenho</h1>
+
+    <div class="box-painting">
+      <canvas id="tela" width="800" height="400"></canvas>
+
+      <div class="colorArea">
+        <div class="colors">
+          <div
+            type="color"
+            data-color="#000000"
+            style="background-color: #000000"
+            class="color lastColor"
+          ></div>
+
+          <div
+            data-color="#00ff00"
+            style="background-color: #00ff00"
+            class="color active"
+          ></div>
+
+          <div
+            data-color="#0000ff"
+            style="background-color: #0000ff"
+            class="color"
+          ></div>
+
+          <div
+            data-color="#ffff00"
+            style="background-color: #ffff00"
+            class="color"
+          ></div>
+
+          <div
+            data-color="#ff00ff"
+            style="background-color: #ff00ff"
+            class="color"
+          ></div>
+
+          <div
+            data-color="#ff6600"
+            style="background-color: #ff6600"
+            class="color"
+          ></div>
+        </div>
+
+        <div class="option-one">
+          <label for="widthPincel">Espessura</label>
+          <div id="widthPincel">
+            <button class="decrease">-</button>
+            <div class="width-line">5px</div>
+            <button class="increase">+</button>
+          </div>
+        </div>
+
+        <div class="option-two">
+          <label for="newColor">Escolher Cor</label>
+          <input type="color" value="#000000" />
+        </div>
+      </div>
+    </div>
+
+    <button class="clear">Limpar Quadro</button>
+
+    <footer>Criado por Bruno Guerra, Projeto para Aprendizado.</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
